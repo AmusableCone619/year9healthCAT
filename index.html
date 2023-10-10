@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The 4 L's of Methamphetamine</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            text-align: center;
+            background-color: #000;
+            color: #fff;
+        }
+
+        .start-screen {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .start-button, .next-button {
+            font-size: 18px;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            background: #fff;
+            color: #000;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background 0.3s, color 0.3s;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .start-button:hover, .next-button:hover {
+            background: #ddd;
+            color: #000;
+        }
+
+        .content-page {
+            display: none;
+        }
+
+        .content-page.active {
+            display: block;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.9);
+            color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
+        }
+
+        section {
+            max-width: 400px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            text-align: left;
+            position: relative;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+            color: #000;
+        }
+
+        p {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="start-screen">
+        <h1 style="font-size: 48px; margin-bottom: 20px;">The 4 L's of Methamphetamine</h1>
+        <button class="start-button" onclick="start()">Start</button>
+    </div>
+
+    <div class="content-page">
+        <header>
+            <h1 style="font-size: 36px;">The 4 L's of Methamphetamine</h1>
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="#lover">Lover</a></li>
+                <li><a href="#liver">Liver</a></li>
+                <li><a href="#livelihood">Livelihood</a></li>
+                <li><a href="#law">Law</a></li>
+            </ul>
+        </nav>
+        
+        <section id="lover">
+            <h2 style="font-size: 24px;">Lover</h2>
+            <p>Methamphetamine can affect peoples relationships. Meth users may experience extreme changes in behavior, emotional instability, and financial hardship, all of which can lead to the destruction of a relationship </p>
+            <button class="next-button" onclick="showLiver()">Next</button>
+        </section>
+    </div>
+
+    <div class="content-page">
+        <header>
+            <h1 style="font-size: 36px;">The 4 L's of Methamphetamine</h1>
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="#lover">Lover</a></li>
+                <li><a href="#liver">Liver</a></li>
+                <li><a href="#livelihood">Livelihood</a></li>
+                <li><a href="#law">Law</a></li>
+            </ul>
+        </nav>
+        
+        <section id="liver">
+            <h2 style="font-size: 24px;">Liver</h2>
+            <p>methamphetamine can have both physical and psychological effects it can include severe dental problems and also psychosis, including:
+paranoia
+hallucinations
+repetitive motor activity
+changes in brain structure and function
+deficits in thinking and motor skills
+increased distractibility
+memory loss and
+weight loss</p>
+            <button class="next-button" onclick="showLivelihood()">Next</button>
+        </section>
+    </div>
+
+    <div class="content-page">
+        <header>
+            <h1 style="font-size: 36px;">The 4 L's of Methamphetamine</h1>
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="#lover">Lover</a></li>
+                <li><a href="#liver">Liver</a></li>
+                <li><a href="#livelihood">Livelihood</a></li>
+                <li><a href="#law">Law</a></li>
+            </ul>
+        </nav>
+        
+        <section id="livelihood">
+            <h2 style="font-size: 24px;">Livelihood</h2>
+            <p>Methamphetamine can effect even home and work life it can decrease the chances of you getting a job it can also get you kicked out of your job very quickly at home it could effect the way you treat and speak to people wich could lead to issues in the home</p>
+            <button class="next-button" onclick="showLaw()">Next</button>
+        </section>
+    </div>
+
+    <div class="content-page">
+        <header>
+            <h1 style="font-size: 36px;">The 4 L's of Methamphetamine</h1>
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="#lover">Lover</a></li>
+                <li><a href="#liver">Liver</a></li>
+                <li><a href="#livelihood">Livelihood</a></li>
+                <li><a href="#law">Law</a></li>
+            </ul>
+        </nav>
+        
+        <section id="law">
+            <h2 style="font-size: 24px;">Law</h2>
+            <p>methamphetamine can also have legal conequences such as jail time and/or heavy fines </p>
+            <button class="next-button" onclick="showLover()">Next</button>
+        </section>
+    </div>
+
+    <script>
+        function start() {
+            document.querySelector('.start-screen').style.display = 'none';
+            document.querySelector('.content-page').classList.add('active');
+        }
+
+        function showLiver() {
+            document.querySelector('#lover').parentNode.classList.remove('active');
+            document.querySelector('#liver').parentNode.classList.add('active');
+        }
+
+        function showLivelihood() {
+            document.querySelector('#liver').parentNode.classList.remove('active');
+            document.querySelector('#livelihood').parentNode.classList.add('active');
+        }
+
+        function showLaw() {
+            document.querySelector('#livelihood').parentNode.classList.remove('active');
+            document.querySelector('#law').parentNode.classList.add('active');
+        }
+
+        function showLover() {
+            document.querySelector('#law').parentNode.classList.remove('active');
+            document.querySelector('#lover').parentNode.classList.add('active');
+        }
+    </script>
+</body>
+</html>
+
